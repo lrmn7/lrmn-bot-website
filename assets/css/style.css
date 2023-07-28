@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kaushan+Script&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fd9a73;
+    margin: 0;
+    padding: 0;
+    font-family: "fjalla one";
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#282C35;
+}
+
+body::-webkit-scrollbar {
+    width: 0rem;
+}
+
+.head {
+    min-height: 90vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282C35;
+}
+
+.icon {
+    min-height: 10vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282C35;
+}
+
+#go-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fd9a73;
+    color: #282C35;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+h1 {
+    font-size:200px;
+}
+
+h2 {
+    background-color:#282C35;
+    color:#fd9a73;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h3 {
+    color: #282C35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+a {
+    color:#282C35;
+}
+
+.stuff {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color: #282C35;
+    font-weight: bold;
+    font-size: 20px;    
+}
+
+.strike {
+    text-decoration:line-through;
+}
+
+.opt {
+    color:#228b22;
+}
+
+.ali {
+    color:#0f52ba;
+}
+
+.req {
+    color:#de1738;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    
+    padding: 15px;
+    border-bottom: 1px solid #282C35;
+    color: #282C35;
+    text-align: center;
+}
+
+th {
+    background-color: #fd9a73;
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    color: #282C35;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover,
+a:focus {
+    color:#ffe4e1;
+}
+
+.end {
+    width: 100%;
+    height: 100px;
+    background: #fd9a73;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: 282C35;
+    bottom: 0;
+    color: #282C35;
+}
+
+.end a {
+    font-family: "Kaushan Script";
+    font-size: 15px;
+    color: #282C35;
+    text-decoration-line: none;
+    transition: color 0.3s ease;
+    margin-left: 2px;
+}
+
+.end a:hover {
+    color: #dc143c;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #fd9a73 20%, #fd9a73 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fd9a73 20%, #fd9a73 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#282C35 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #282C35 2px, #fd9a73 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+.cool {
+    text-align: center;
+}
+
+.cool img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #fd9a73;
+    padding: 10px;
+    box-shadow: 0 0 30px #282C35;
+}
+
+.links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 15px;
+    color: #282C35;
+    background-color: #fd9a73;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 20px;
+    border: 2px solid #282C35;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #282C35;
+    color: #fd9a73;
+}
+
+@media only screen and (max-width: 900px) {
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .stuff {
+        font-size: 15px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #go-up-button {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #fd9a73;
+            color: #282C35;
+            padding: 5px 7px;
+            border-radius: 100%;
+            cursor: pointer;
+    }
+
+    .end, .end a {
+        font-size: 15px;
+    }
+    
+    .meta-link {
+        align-items: center;
+        backdrop-filter: blur(1px);
+        background-color: #fd9a73;
+        border: 1px solid #282C35;
+        border-radius: 3px;
+        bottom: 5px;
+        cursor: pointer;
+        display: inline-flex;
+        gap: 5px;
+        left: 5px;
+        padding: 5px 10px;
+        position: fixed;
+        text-decoration: none;
+        transition: bckground-color 400ms, border-color 400ms;
+        z-index: 10000;
+    }
+
+    .meta-link:hover {
+        background-color: #282C35;
+    }
+
+    #home:hover>i,
+    .meta-link:hover>span {
+        color: #fd9a73;
+    }
+
+    #home>i
+    .meta-link>span {
+        transition: color 400ms;
+    }
+
+    .cool img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #fd9a73;
+        padding: 10px;
+        box-shadow: 0 0 30px #282C35;
+    }
+
+    .links {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .links a {
+        margin: 0 15px;
+        color: #282C35;
+        background-color: #fd9a73;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 8px 20px;
+        border: 2px solid #282C35;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+        background-color: #282C35;
+        color: #fd9a73;
+    }
+
+}

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="icon" type="image/png" href="assets/img/lrmncircle.png">
+        <script src="https://kit.fontawesome.com/867787fefb.js" crossorigin="anonymous"></script>
+        <title>Commands</title>
+    </head>
+    <body>
+        <div class="head">
+            <h1>Commands</h1>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-angles-down fa-bounce fa-xl"></i>
+        </div>
+        <div class="stuff">
+            <p>
+                <span class="req">&lt; &gt;</span> = required, <span class="opt">[ ]</span> = optional, <span class="ali">( )</span> = aliases
+                <br>
+                <br>
+                | <a href="#Canvas">Admin</a> |
+                <a href="#Economy">Economy</a> |
+                <a href="#Fun">Fun</a> |
+                <a href="#Moderation">Moderation</a> |
+                <a href="#Utility">Utility</a> |
+                <a href="#Invite">Invite</a> |
+                <a href="#Music">Music</a> |
+                <a href="#Information">Information</a> |
+                <a href="#Giveaways">Giveaways</a> |
+            </p>
+        </div>
+        <div class="section" id="Admin">
+            <h2>+Admin</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Command</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+welcome status \ </td>
+                        <td>enable or disable welcome message.</td>
+                    </tr>
+                    <tr>
+                        <td>+welcome channel \ <span class="req">&lt;#channel&gt;</span></td>
+                        <td>configure channel where welcome messages must be sent</td>
+                    </tr>
+                    <tr>
+                        <td>+welcome preview</td>
+                        <td>send a welcome preview</td>
+                    </tr>
+                    <tr>
+                        <td>+welcome desc \</td>
+                        <td>set welcome embed description</td>
+                    </tr>
+                    <tr>
+                        <td>+welcome footer \</td>
+                        <td>set welcome embed footer</td>
+                    </tr>
+                    <tr>
+                        <td>+welcome thumbnail \</td>
+                        <td>enable or disable welcome message thumbnail</td>
+                    </tr>
+                    <tr>
+                        <td>+welcome color \ <span class="req">&lt;hex&gt;</span></td>
+                        <td>set welcome embed color</td>
+                    </tr>
+                    <tr>
+                        <td>+welcome image \</td>
+                        <td>set welcome embed image</td>
+                    </tr>
+                    <tr>
+                        <td>+farewell status \</td>
+                        <td>send a farewell preview</td>
+                    </tr>
+                    <tr>
+                        <td>+farewell desc \</td>
+                        <td>set farewell embed description</td>
+                    </tr>
+                    <tr>
+                        <td>+farewell footer \</td>
+                        <td>set farewell embed footer</td>
+                    </tr>
+                    <tr>
+                        <td>+farewell thumbnail \</td>
+                        <td>enable or disable farewell message thumbnail</td>
+                    </tr>
+                    <tr>
+                        <td>+farewell color \<span class="opt"><#hex></span></td>
+                        <td>set farewell embed color</td>
+                    </tr>
+                    <tr>
+                        <td>+farewell image \<span class="opt"><#image-url></span></td>
+                        <td>set farewell embed image</td>
+                    </tr>
+                    <tr>
+                        <td>+ticket setup \<span class="opt"><#channel></span></td>
+                        <td>setup a new ticket message</td>
+                    </tr>
+                    <tr>
+                        <td>+ticket log \ <span class="opt"><#channel></span></td>
+                        <td>setup log channel for tickets</td>
+                    </tr>
+                    <tr>
+                        <td>+ticket close</td>
+                        <td>close the ticket</td>
+                    </tr>
+                    <tr>
+                        <td>+ticket remove \</td>
+                        <td>remove user/role from the ticket</td>
+                    </tr>
+                    <tr>
+                        <td>+ticketcat remove \</td>
+                        <td>remove a ticket category</td>
+                    </tr>
+                    <tr>
+                        <td>+ticketcat add \</td>
+                        <td>create a new ticket category</td>
+                    </tr>
+                    <tr>
+                        <td>+ticketcat list</td>
+                        <td>list all ticket categories</td>
+                    </tr>
+                    <tr>
+                        <td>+counter <span class="opt"><#counter_type> <#name></span></td>
+                        <td>setup counter channel in the guild</td>
+                    </tr>
+                    <tr>
+                        <td>+modlog <span class="opt">[channel|off]</span></td>
+                        <td>enable or disable moderation logs</td>
+                    </tr>
+                    <tr>
+                        <td>+autorole <span class="opt">[role|off]</span></td>
+                        <td>setup role to be given when a member joins the server</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Economy">
+            <h2>+Economy</h2>
+            <table>
+                <tbody>
+                    <tr>  
+                        <th class="usage">Command</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+bank balance</td>
+                        <td>check your coin balance</td>
+                    </tr>
+                    <tr>
+                        <td>+bank deposit \</td>
+                        <td>deposit coins to your bank account</td>
+                    </tr>
+                    <tr>
+                        <td>+bank withdraw \</td>
+                        <td>withdraw coins from your bank account</td>
+                    </tr>
+                    <tr>
+                        <td>+bank transfer \</td>
+                        <td>transfer coins to other user</td>
+                    </tr>
+                    <tr>
+                        <td>+beg</td>
+                        <td>beg from someone</td>
+                    </tr>
+                    <tr>
+                        <td>+daily</td>
+                        <td>receive a daily bonus</td>
+                    </tr>
+                    <tr>
+                        <td>+gamble \</td>
+                        <td>try your luck by gambling</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Fun">
+            <h2>+Fun</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Command</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+animal \</td>
+                        <td>shows a random animal image</td>
+                    </tr>
+                    <tr>
+                        <td>+facts \</td>
+                        <td>get a random animal facts</td>
+                    </tr>
+                    <tr>
+                        <td>+flip coin</td>
+                        <td>flip a coin 😎</td>
+                    </tr>
+                    <tr>
+                        <td>+flip text \</td>
+                        <td>reverses the given message</td>
+                    </tr>
+                    <tr>
+                        <td>+snake</td>
+                        <td>start a snake game</td>
+                    </tr>
+                    <tr>
+                        <td>+meme [category]</td>
+                        <td>get a random meme</td>
+                    </tr>
+                    <tr>
+                        <td>+together <span class="req">&lt;game&gt;</span></td>
+                        <td>discord together</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Moderation">
+            <h2>+Moderation</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Command</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+warnings clear \</td>
+                        <td>clear all warnings for a user</td>
+                    </tr>
+                    <tr>
+                        <td>+warnings list <span class="opt">[member]</span></td>
+                        <td>list all warnings for a user</td>
+                    </tr>
+                    <tr>
+                        <td>+warn \<span class="opt">[reason]</span></td>
+                        <td>warns the specified member</td>
+                    </tr>
+                    <tr>
+                        <td>+timout \ <span class="opt">[reason]</span></td>
+                        <td>timout the specified member</td>
+                    </tr>
+                    <tr>
+                        <td>+untimout \ <span class="opt">[reason]</span></td>
+                        <td>untimout the specified member</td>
+                    </tr>
+                    <tr>
+                        <td>+kick \<span class="opt">[reason]</span></td>
+                        <td>kicks the specified member</td>
+                    </tr>
+                    <tr>
+                        <td>+ban \<span class="opt">[reason]</span></td>
+                        <td>ban the specified member</td>
+                    </tr>
+                    <tr>
+                        <td>+nick reset \</td>
+                        <td>reset a members nickname</td>
+                    </tr>
+                    <tr>
+                        <td>+disconnect \ <span class="opt">[reason]</span></td>
+                        <td>kick a member from voice channel</td>
+                    </tr>
+                    <tr>
+                        <td>+move \ <span class="opt">[reason]</span></td>
+                        <td>move a member from one voice channel to another</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Utility">
+            <h2>+Utility</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Commands</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+bigemoji \</td>
+                        <td>enlarge an emoji</td>
+                    </tr>
+                    <tr>
+                        <td>+covid \</td>
+                        <td>get covid statistics for a country</td>
+                    </tr>
+                    <tr>
+                        <td>+github \</td>
+                        <td>shows github statistics of a user</td>
+                    </tr>
+                    <tr>
+                        <td>!help <span class="opt">[menu]</span></td>
+                        <td>help menu</td>
+                    </tr>
+                    <tr>
+                        <td>+paste \</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Invite">
+            <h2>+Invite</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Commands</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+invitetracker \</td>
+                        <td>add existing guild invites to users</td>
+                    </tr>
+                    <tr>
+                        <td>+invitecodes <span class="req">&lt;member&gt;</span></td>
+                        <td>list all your invites codes in this guild</td>
+                    </tr>
+                    <tr>
+                        <td>+inviter <span class="opt">[member]</span></td>
+                        <td>shows inviter information</td>
+                    </tr>
+                    <tr>
+                        <td>+inviteranks</td>
+                        <td>view invite ranks configured in the server</td>
+                    </tr>
+                    <tr>
+                        <td>+inviterank add \ </td>
+                        <td>add auto-rank after reaching a particular number of invites</td>
+                    </tr>
+                    <tr>
+                        <td>+inviterank remove \</td>
+                        <td>remove invite rank configured with that role</td>
+                    </tr>
+                    <tr>
+                        <td>+invites <span class="req">"&lt;member&gt;"</span></td>
+                        <td>view the number of invites of a member</td>
+                    </tr>
+                    <tr>
+                        <td>+addinvites \</td>
+                        <td>add invites to a member</td>
+                    </tr>
+                    <tr>
+                        <td>+resetinvites \</td>
+                        <td>clear previously added invites</td>
+                    </tr>
+                    <tr>
+                        <td>!invitesimport <span class="req">&lt;member&gt;</span></td>
+                        <td>add existing guild invites to users</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Music">
+            <h2>+Music</h2>
+            <h3>Only works in support server :)</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Commands</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+clear</td>
+                        <td>clear the queue...</td>
+                    </tr>
+                    <tr>
+                        <td>+loop</td>
+                        <td>only loops the current playing song, it sucks, i know</td>
+                    </tr>
+                    <tr>
+                        <td>+lyrics <span class="opt">[song]</span></td>
+                        <td>get them lyrics...</td>
+                    </tr>
+                    <tr>
+                        <td>+move <span class="req">&lt;channel&gt;</span></td>
+                        <td>we are the best in the town...</td>
+                    </tr>
+                    <tr>
+                        <td>+nowplaying <span class="ali">(np)</span></td>
+                        <td>this is cool imo</td>
+                    </tr>
+                    <tr>
+                        <td>+pause</td>
+                        <td>do i need to explain this+</td>
+                    </tr>
+                    <tr>
+                        <td>+play <span class="req">&lt;song&gt;</span></td>
+                        <td>use it again while playing to add it to queue</td>
+                    </tr>
+                    <tr>
+                        <td>+queue</td>
+                        <td>fetch the current queue</td>
+                    </tr>
+                    <tr>
+                        <td>+remove <span class="req">&lt;int&gt;</span></td>
+                        <td>get rid of that sheet from the queue</td>
+                    </tr>
+                    <tr>
+                        <td>+resume</td>
+                        <td>once again, do i need to explain this+</td>
+                    </tr>
+                    <tr>
+                        <td>+seek <span class="req">&lt;int&gt;</span></td>
+                        <td>it takes the int in milliseconds</td>
+                    </tr>
+                    <tr>
+                        <td>+shuffle</td>
+                        <td>get the queue shuffled</td>
+                    </tr>
+                    <tr>
+                        <td>+skip</td>
+                        <td>this is self explanatory bruh, cmon</td>
+                    </tr>
+                    <tr>
+                        <td>+splay <span class="req">&lt;link&gt;</span></td>
+                        <td>drop the spotify song link, lmk if you have premium acc 👀</td>
+                    </tr>
+                    <tr>
+                        <td>+stop</td>
+                        <td>it will disconnect the bot</td>
+                    </tr>
+                    <tr>
+                        <td>+volume <span class="req">&lt;int&gt;</span></td>
+                        <td>0 - 100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Information">
+            <h2>+Information</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Commands</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+botinvite</td>
+                        <td>get bot's invite</td>
+                    </tr>
+                    <tr>
+                        <td>+botstats</td>
+                        <td>get bot's statistics</td>
+                    </tr>
+                    <tr>
+                        <td>+uptime</td>
+                        <td>get bot's uptime</td>
+                    </tr>
+                    <tr>
+                        <td>+userinfo \ <span class="opt">[member]</span></td>
+                        <td>get user information</td>
+                    </tr>
+                    <tr>
+                        <td>+chinfo \ <span class="opt">[member]</span></td>
+                        <td>get channel information</td>
+                    </tr>
+                    <tr>
+                        <td>+guildinfo</td>
+                        <td>get guild information</td>
+                    </tr>
+                    <tr>
+                        <td>+botinfo</td>
+                        <td>get bot information</td>
+                    </tr>
+                    <tr>
+                        <td>+avatar <span class="opt">[member]</span></td>
+                        <td>displays avatar information</td>
+                    </tr>
+                    <tr>
+                        <td>+emojinfo <span class="opt">[emoji]</span></td>
+                        <td>displays emoji information</td>
+                    </tr>
+                    <tr>
+                        <td>+lib</td>
+                        <td>display the XP leaderboard</td>
+                    </tr>
+                    <tr>
+                        <td>+ping</td>
+                        <td>shows the current ping from the bot to the discord servers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="Giveaways">
+            <h2>+Giveaways</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="usage">Commands</th>
+                        <th class="description">Description</th>
+                    </tr>
+                    <tr>
+                        <td>+giveaway start \ <span class="opt"><#channel></span></td>
+                        <td>setup a new giveaway</td>
+                    </tr>
+                    <tr>
+                        <td>+giveaway pause \</td>
+                        <td>pause a giveaway</td>
+                    </tr>
+                    <tr>
+                        <td>+giveaway resume \</td>
+                        <td>resume a paused giveaway</td>
+                    </tr>
+                    <tr>
+                        <td>+giveaway end \</td>
+                        <td>end a giveaway</td>
+                    </tr>
+                    <tr>
+                        <td>+giveaway reroll \</td>
+                        <td>reroll a giveaway</td>
+                    </tr>
+                    <tr>
+                        <td>+giveaway list \</td>
+                        <td>list all giveaways</td>
+                    </tr>
+                    <tr>
+                        <td>+giveaway edit \</td>
+                        <td>edit a giveaway</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="go-up-button">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        <div class="end">
+            Made with ♡ <a href="https://hi.lrmn.site">L RMN</a>
+        </div>
+        <script src="assets/js/index.js"></script>
+
+    </body>
+</html>
