@@ -139,7 +139,7 @@ a:focus {
     height: 100px;
     background: #fd9a73;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,8 +149,7 @@ a:focus {
 }
 
 .end a {
-    font-family: "Kaushan Script";
-    font-size: 25px;
+    font-size: 15px;
     color: #282C35;
     text-decoration-line: none;
     transition: color 0.3s ease;
@@ -283,7 +282,7 @@ a:focus {
     }
 
     .end, .end a {
-        font-size: 15px;
+        font-size: 10px;
     }
     
     .meta-link {
